@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 10px 10px;
+    background-color: #098ae0;
+    color: #fff;
+    font-style: italic;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 24px;
+}
+
+header nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .container  {
+    align-items: flex-start;
+}
+
+.store {
+    align-items: flex-start;
+    padding: 24px 0;
+} 
+
+.store h2{
+    color: #67a0c1;
+    margin-bottom: 16px;
+    font-style: italic;
+}
+
+.store p {
+    margin-bottom: 8px;
+}
+.store-img {
+    margin-right: 32px;
+}
+
+
+.text_border {
+    margin-bottom: 50px;
+}
+
+.text_border h2 {
+    border-bottom: 2px solid #67a0c1;
+    padding-bottom: 20px;
+    color: #67a0c1;
+    font-style: italic;
+}
+
+.tenis_ul {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    column-gap: 1%;
+    row-gap: 5%;
+    margin-bottom: 56px;
+}
+
+.lista-tenis {
+    flex-wrap: wrap;
+}
+
+.lista-tenis li {
+    list-style: none;
+}
+
+.lista-tenis li h3 {
+    margin: 16px 0;
+}
+
+.lista-tenis li button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #1e89d0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.lista-tenis li strong {
+    margin: 16px 0;
+    display: block;
+}
+
+@media screen and (max-width: 640px){
+    .menu {
+        max-width: 90%;
+    }
+    header .container {
+        flex-direction: column;
+    }
+    .container {
+        max-width: 90%;
+    }
+    header nav li {
+        display: block;
+    }
+    section .store  {
+        display: block;
+        
+    } 
+    .store-img {
+        margin-right: 0;
+    }
+    
+    header .container,
+    section .container {
+    flex-direction: column;
+}
+.tenis_ul {
+    display: block;
+}
+aside {
+    padding-left: 0;
+}
+}
+
+@media screen and (max-width: 768px) and (max-width: 1023px){
